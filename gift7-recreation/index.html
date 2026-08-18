@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Little Gift For You</title>
+  <link rel="icon" type="image/jpg" href="pictures/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="hearts" id="hearts"></div>
+
+  <section class="gate" id="gate" aria-label="Gift cover">
+    <div class="gate-orb orb-a"></div>
+    <div class="gate-orb orb-b"></div>
+    <div class="gate-content">
+      <div class="tiny-label">A little something for you</div>
+      <div class="tiny-label">Happy 11th Months of Love, Babe</div>
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open your gift">
+        <div class="envelope-back"></div>
+        <div class="letter">
+          <span class="letter-heart">♡</span>
+          <span>For you</span>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="seal">♥</div>
+      </div>
+      <h1>Open when you're ready.</h1>
+      <p>There’s more inside this page, made just for you.</p>
+      <button class="open-btn" id="openBtn"><span>Open me</span><span>↗</span></button>
+      <div class="hint">Tap the envelope or the button</div>
+    </div>
+  </section>
+
+  <main class="gift" id="gift" aria-hidden="true">
+    <header class="topbar">
+      <div class="brand">FOR <span id="recipientTop">MY FAVORITE PERSON</span> ♡</div>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+        <span class="music-dot" aria-hidden="true"><span></span></span>
+        <span id="musicText">Play Me First</span>
+      </button>
+    </header>
+
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <div class="eyebrow">August 19, 2026</div>
+        <h2>Hey, <span id="recipientName">Baby</span>.<br>You're my favorite <em>part</em> of every day.</h2>
+        <p id="introText">I made this little web because some feelings deserve more than a chat bubble, I love you. Happy 11th Months of Love</p>
+        <div class="hero-actions">
+          <a href="#letter" class="primary-btn">Read my letter <span>↓</span></a>
+          <button class="ghost-btn" id="sprinkleBtn" type="button">Send some Love <span>♥</span></button>
+        </div>
+      </div>
+
+      <div class="hero-frame">
+        <div class="photo-card">
+          <div class="photo-placeholder" id="heroPhoto">
+            <img src="pictures/pic1.jpg" alt="Favorite memory with you" />
+          </div>
+          <div class="photo-note">THE MOMENT I WANT TO KEEP FOREVER.</div>
+        </div>
+        <div class="sticker sticker-one">xo</div>
+        <div class="sticker sticker-two">♡</div>
+      </div>
+    </section>
+
+    <section class="marquee"><div class="marquee-track"><span>I love you</span><span>I choose you</span><span>You are my home</span><span>I yearn for you</span><span>I Miss You</span><span>You are my Everything</span><span>My First Love</span><span>I love being with you.</span></div></section>
+
+    <section class="letter-section section-pad" id="letter">
+      <div class="section-kicker">01 — My letter to you</   div>
+      <div class="letter-layout">
+        <div class="letter-title"><h3>Things I don't say<br><i>enough.</i></h3></div>
+        <article class="paper reveal">
+          <div class="paper-top"><span>Dear <span id="recipientPaper">Ms. Jamaica Ped (My favorite Person)</span>,</span><span>♡</span></div>
+          <p id="letterOne">Thank you for making ordinary days feel like they have a little more light in them.</p>
+          <p id="letterTwo">I know there have been times when I haven't communicated the way I should have. I'm sorry for the moments when I became quiet, distant, or failed to explain what I was feeling. Sometimes I don't know how to put everything into words, and I know that may have made you feel like I wasn't trying or that I didn't care. But please know that was never because you mattered any less to me.</p>
+          <p id="letterThree">I'm sorry for the times I could have listened better, opened up more, or simply made a little more effort to let you know what was going on in my heart. I know communication is important, and I'm still learning how to express myself better—not just for myself, but for us.</p>
+          <p id="letterFour"> I love the way we can laugh at nothing, talk for hours, or sit quietly and still feel completely understood.</p>
+          <p id="letterFive">Whatever comes next, I hope we keep choosing the small moments — the ones that turn into the memories we never want to forget.</p>
+          <p id="letterSix">I may not always get everything right, and I know I still have things to work on, but I want you to know that I care about us deeply. I'm sorry for the things I've fallen short on, and I'm grateful that you're still here beside me.</p>
+          <p id="letterSeven">More than anything, I hope I can show you not just tell you how much you mean to me. I love you, and I always will.</p>
+          <p class="signature">Always,<br><strong id="senderName">Your Wife</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="memories section-pad">
+      <div class="section-kicker">02 — Tiny memories</div>
+      <div class="memory-grid">
+        <button class="memory-card reveal" data-message="That laugh. The kind that makes everyone around you smile too.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic2.jpg" alt="Memory card 2" />
+              <span class="memory-tag">01</span>
+            </div>
+            <div class="memory-back">That laugh.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="Late-night conversations, half-finished stories, and somehow never enough time.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic3.jpg" alt="Memory card 3" />
+              <span class="memory-tag">02</span>
+            </div>
+            <div class="memory-back">Late nights.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="Every tiny detail with you feels like a little treasure I never want to lose.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic4.jpg" alt="Memory card 4" />
+              <span class="memory-tag">03</span>
+            </div>
+            <div class="memory-back">Little treasures.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="The way your hand fits in mine like it was always meant to.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic5.jpg" alt="Memory card 5" />
+              <span class="memory-tag">04</span>
+            </div>
+            <div class="memory-back">Home in your hand.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="The kind of comfort that only exists when I'm with you.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic6.jpg" alt="Memory card 6" />
+              <span class="memory-tag">05</span>
+            </div>
+            <div class="memory-back">Safe with you.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="A quiet moment, a soft smile, and somehow an entire universe in between.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic7.jpg" alt="Memory card 7" />
+              <span class="memory-tag">06</span>
+            </div>
+            <div class="memory-back">My favorite kind of pause.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="The way we make ordinary days feel like a story worth keeping.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic8.jpg" alt="Memory card 8" />
+              <span class="memory-tag">07</span>
+            </div>
+            <div class="memory-back">A beautiful ordinary day.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="The little glances, the big feelings, and all the softness in between.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic9.jpg" alt="Memory card 9" />
+              <span class="memory-tag">08</span>
+            </div>
+            <div class="memory-back">Softness in between.</div>
+          </div>
+        </button>
+        <button class="memory-card reveal" data-message="The version of life I want to keep choosing, over and over, with you.">
+          <div class="memory-inner">
+            <div class="memory-front">
+              <img src="pictures/pic10.jpg" alt="Memory card 10" />
+              <span class="memory-tag">09</span>
+            </div>
+            <div class="memory-back">Always this.</div>
+          </div>
+        </button>
+      </div>
+      <p class="memory-tip">Hover for a little note and Click to reveal.</p>
+    </section>
+
+    <section class="surprise section-pad">
+      <div class="surprise-shell">
+        <div>
+          <div class="section-kicker light">03 — One more thing</div>
+          <h3>Choose a little<br><em>surprise.</em></h3>
+          <p>Pick one. I promise there's something sweet waiting on the other side.</p>
+        </div>
+        <div class="surprise-buttons">
+          <button class="surprise-btn" data-surprise="You are my safest place. ♡">A tiny confession <span>↗</span></button>
+          <button class="surprise-btn" data-surprise="Today is better because you are in it. ✦">A reminder <span>↗</span></button>
+          <button class="surprise-btn" data-surprise="No matter where life takes us, I am always cheering for you. ♥">A promise <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-pad">
+      <div class="closing-card">
+        <div class="big-heart">♥</div>
+        <div class="eyebrow">Made with a lot of love</div>
+        <h3>And this is only<br>the beginning.</h3>
+        <p>Come back whenever you need a reminder that you are deeply, completely loved. I Love You So Much.</p>
+        <p>Happy Monthsary Baby Mwahhh and More to Come!</p>
+        <button class="primary-btn" id="againBtn">Replay the beginning ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-heart">♡</div>
+      <p class="eyebrow">A little note</p>
+      <h4 id="modalText">You make every day softer.</h4>
+      <button class="primary-btn" data-close="true">Keep this one</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music/Kusapiling.mp3" type="audio/mpeg">
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
